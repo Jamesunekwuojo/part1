@@ -16,6 +16,7 @@ const StatisticsLine = ({text, value}) => {
   return(
     <div>
       <p>{text}: {value}</p>
+      
     </div>
   )
 
@@ -43,10 +44,17 @@ const Statistics = ({good, neutral, bad}) => {
           <StatisticsLine text="neutral" value={neutral}></StatisticsLine>
 
           <StatisticsLine text="bad" value={bad}></StatisticsLine>
-          <p>all {good + neutral + bad}</p>
+          
+          <StatisticsLine text="all" value={all}></StatisticsLine>
 
-          <p>average {average}</p>
-          <p>positive {positive}%</p>
+          <StatisticsLine text="average" value={average}></StatisticsLine>
+
+          <StatisticsLine text="positive" value={positive}></StatisticsLine>
+
+        
+
+          
+         
         </tbody>
       </table>
       

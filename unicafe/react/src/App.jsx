@@ -38,41 +38,15 @@ const Statistics = ({good, neutral, bad}) => {
 
       <table>
         <tbody>
-          <tr>
-            <td><StatisticsLine text="good" value={good}></StatisticsLine></td>
-          </tr>
+          <StatisticsLine text="good" value={good}></StatisticsLine>
 
-          <tr>
-            <td>
-              <StatisticsLine text="neutral" value={neutral}></StatisticsLine>
-            </td>
-          </tr>
+          <StatisticsLine text="neutral" value={neutral}></StatisticsLine>
 
-          <tr>
-            <td>
-              <StatisticsLine text="bad" value={bad}></StatisticsLine>
-            </td>
-          </tr>
+          <StatisticsLine text="bad" value={bad}></StatisticsLine>
+          <p>all {good + neutral + bad}</p>
 
-          <tr>
-            <td>
-            <p>all {good + neutral + bad}</p>
-
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <p>average {average}</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <p>positive {positive}%</p>
-            </td>
-          </tr>
-
+          <p>average {average}</p>
+          <p>positive {positive}%</p>
         </tbody>
       </table>
       
